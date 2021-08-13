@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="./js/sidebar.js"></script>    
+<title>Document</title>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="desktop-view" style="text-decoration: none;" onclick="closeNav()"><i class="fas fa-times cross-side"></i></a>
+        
+        <div href="#" class="brand">
+            <img class="brand-image" src="./images/nature-logo.png" width="50" height="50">
+            <h2 class="brand-name">Hari</h2>
+        </div>
+        <hr>
+    <div class="sidebar-links">
+    <ul>
+        <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="active">Home</a></li>
+        <li><i class="fas fa-hotel" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="add_hotel.html" class="">Hotel</a></li>
+        <li><i class="fas fa-bed"style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Rooms</a></li>
+        <li><i class="fas fa-glass-martini" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Resturants</a></li>
+        <li><i class="fas fa-utensils" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Menu</a></li>
+        <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Table</a></li>
+        <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Hall</a></li>
+        <li><i class="fas fa-book" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Booking</a></li>
+        <li><i class="fas fa-comment" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Reviews</a></li>
+        <li><i class="fas fa-user" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Account</a></li>
+    </ul>
+    </div>
+    </div><!-- Sidebar -->
+
+    <div class="main-content" id="main">
+        <div class="topnav">
+           <div class="topnav-header">
+               <div class="dashboard-name">
+                   <i class="fas fa-bars desktop icon-color" style="color:red" onclick="openNav()"></i>
+                   <i class="fas fa-bars mobile" style="color:red" onclick="openNavMobile()"></i>
+                   <h3 style="margin-left: 10px;">Dashboard</h3>
+               </div>
+               <div class="user">
+                <h4>Manish Regmi</h4>
+                <img src="./images/nature-logo.png" class="user-image" alt="User Image"> 
+               </div>
+           </div>
+        </div><!-- topnav -->
+        <div class="content-section">
+            <h2 style="color: red; text-align: center; margin-top: 10px;" class="text-center">Halls Of Intourist Palace</h2>
+            <h4 style="color: red;">Search</h4>
+            <input type="text" placeholder="Search.." name="search" style="width: 50%; text-align: center; font-size: 18px;;">
+            
+            
+           <div class="table-container" style="overflow-x: auto;">
+            <table id="table">
+                <tr>
+                  <th>Hall No.</th>
+                  <th>Total People</th>
+                  <th>Image-1</th>
+                  <th>Image-2</th>
+                  <th>Image-3</th>
+                  <th>Description</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>4</td>
+                  <td><img src="./images/nature-logo.png" width="30" height="30" style="border-radius: 30px;"></td>
+                  <td><img src="./images/nature-logo.png" width="30" height="30" style="border-radius: 30px;"></td>
+                  <td><img src="./images/nature-logo.png" width="30" height="30" style="border-radius: 30px;"></td>
+                  <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat deleniti modi, quibusdam impedit possimus recusandae inventore rem ipsam voluptates saepe accusantium accusamus tenetur.</td>
+                  <td style="background-color: red;"><i class="fas fa-edit" style="color: white;"></i><i class="fas fa-trash" style="color: white; margin-left: 10px;"></i></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>4</td>
+                    <td><img src="./images/nature-logo.png" width="30" height="30" style="border-radius: 30px;"></td>
+                    <td><img src="./images/nature-logo.png" width="30" height="30" style="border-radius: 30px;"></td>
+                    <td><img src="./images/nature-logo.png" width="30" height="30" style="border-radius: 30px;"></td>
+                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat deleniti modi, quibusdam impedit possimus recusandae inventore rem ipsam voluptates saepe accusantium accusamus tenetur.</td>
+                    <td style="background-color: red;"><i class="fas fa-edit" style="color: white;"></i><i class="fas fa-trash" style="color: white; margin-left: 10px;"></i></td>
+                  </tr>
+                
+            </table>
+              
+           </div>
+           </div>
+              
+        </div><!-- Content-section -->
+    </div><!-- Main-content -->
+</body>
+</html>

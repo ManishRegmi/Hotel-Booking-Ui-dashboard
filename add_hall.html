@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="./js/sidebar.js"></script>    
+<title>Document</title>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="desktop-view" style="text-decoration: none;" onclick="closeNav()"><i class="fas fa-times cross-side"></i></a>
+        
+        <div href="#" class="brand">
+            <img class="brand-image" src="./images/nature-logo.png" width="50" height="50">
+            <h2 class="brand-name">Hari</h2>
+        </div>
+        <hr>
+    <div class="sidebar-links">
+    <ul>
+        <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="active">Home</a></li>
+        <li><i class="fas fa-hotel" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="add_hotel.html" class="">Hotel</a></li>
+        <li><i class="fas fa-bed"style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Rooms</a></li>
+        <li><i class="fas fa-glass-martini" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Resturants</a></li>
+        <li><i class="fas fa-utensils" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Menu</a></li>
+        <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Table</a></li>
+        <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Hall</a></li>
+        <li><i class="fas fa-book" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Booking</a></li>
+        <li><i class="fas fa-comment" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Reviews</a></li>
+        <li><i class="fas fa-user" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Account</a></li>
+    </ul>
+    </div>
+    </div><!-- Sidebar -->
+
+    <div class="main-content" id="main">
+        <div class="topnav">
+           <div class="topnav-header">
+               <div class="dashboard-name">
+                   <i class="fas fa-bars desktop icon-color" style="color:red" onclick="openNav()"></i>
+                   <i class="fas fa-bars mobile" style="color:red" onclick="openNavMobile()"></i>
+                   <h3 style="margin-left: 10px;">Dashboard</h3>
+               </div>
+               <div class="user">
+                <h4>Manish Regmi</h4>
+                <img src="./images/nature-logo.png" class="user-image" alt="User Image"> 
+               </div>
+           </div>
+        </div><!-- topnav -->
+        <div class="content-section">
+            <h3 style="color: red; text-align: center;" class="text-center">Add Hall</h3>
+            <div class="add-room-form">
+
+                <form action="">
+
+                    <label for="lname">Select Hotel</label>
+                    <select>
+                    <option value="">Intourist</option>
+                    </select>
+
+                  <label for="fname">Choose Hall Number</label>
+                  <select>
+                    <option value="">1</option>
+                    </select>
+
+                  <label for="fname">Total People</label>
+                  <input type="number" id="fname" name="firstname" placeholder="Enter number of spaces...">
+
+                  <label for="lname">Hall Image1 (Required)</label>
+                  <input type="file" id="lname" name="lastname" placeholder="Front Image..">
+
+                  <label for="lname">Hall Image2 (Optional)</label>
+                  <input type="file" id="lname" name="lastname" placeholder="Back Image..">
+
+                  <label for="lname">Hall Image3 (Optional)</label>
+                  <input type="file" id="lname" name="lastname" placeholder="Side Image..">
+
+                  <label for="subject">Hall Description</label>
+                  <textarea id="subject" name="subject" placeholder="About Hall...." style="height:200px"></textarea>
+                  
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              
+        </div><!-- Content-section -->
+    </div><!-- Main-content -->
+</body>
+</html>
