@@ -62,7 +62,9 @@
                   <input type="text" id="lname" name="lastname" placeholder="Hotel Address..">
               
                   <label for="lname">Hotel Front Image (Required)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Front Image..">
+                  <input type="file" id="lname" name="lastname" 
+                  onchange="readUrl(this)"
+                  placeholder="Front Image..">
 
                   <label for="lname">Hotel Back Image (Optional)</label>
                   <input type="file" id="lname" name="lastname" placeholder="Back Image..">
