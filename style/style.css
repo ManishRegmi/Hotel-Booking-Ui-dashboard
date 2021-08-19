@@ -42,7 +42,8 @@ color: white;
 }
 
 .sidebar-links{
-margin:50px;
+margin-top: 20%;
+padding-left: 30%;
 }
 
 
@@ -285,6 +286,11 @@ text-align: center;
 
 .disc{
   width: 10%!important;
+}
+
+.sidebar-container{
+justify-content: center;
+display: flex;
 }
 
 #table tr:nth-child(even){background-color: #f2f2f2;}
