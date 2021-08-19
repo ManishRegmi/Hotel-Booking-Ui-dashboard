@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
         <li><i class="fas fa-comment" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Reviews</a></li>
         <li><i class="fas fa-user" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Account</a></li>
     </ul>
-    </div>
+    </div><!-- sidebar-links -->
     </div><!-- Sidebar -->
 
     <div class="main-content" id="main">
@@ -53,89 +53,36 @@
            </div>
         </div><!-- topnav -->
         <div class="content-section">
-            <section class="info-card">
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-book fa-2x"></i></div>
-            <hr>
-            <div class="card-body">
-                <h4><b>Bookings</b></h4> 
-                <h5>You have 3 Bookings</h5>
-              </div>
-            </div>
-            <div class="card">
-
-                <div class="card-icon"><i class="fas fa-bell fa-2x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Notifications</b></h4> 
-                    <h5>You have 3 Notifications</h5> 
-                  </div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-comment fa-2x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Reviews</b></h4> 
-                    <h5>You have 3 Reviews</h5> 
-                  </div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-user fa-2x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Visited</b></h4> 
-                    <h5>3 People Visited Your Site</h5>
-                  </div>
-            </div>
-        </section><!--Top Card-section -->
-
-        <section class="middle-section">
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-user fa-2x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Visited</b></h4> 
-                    <h5>3 People Visited Your Site</h5>
-                  </div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-user fa-2x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Visited</b></h4> 
-                    <h5>3 People Visited Your Site</h5>
-                  </div>
-            </div>
-        </section><!-- Middle section -->
-
-        <section class="first-section">
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-user fa-3x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Visited</b></h4> 
-                    <h5>3 People Visited Your Site</h5>
-                  </div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-user fa-3x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Visited</b></h4> 
-                    <h5>3 People Visited Your Site</h5>
-                  </div>
-            </div>
-
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-user fa-3x"></i></div>
-                <hr>
-                <div class="card-body">
-                    <h4><b>Visited</b></h4> 
-                    <h5>3 People Visited Your Site</h5>
-                  </div>
-            </div>
-        </section><!-- First section -->
-
+            <h3 style="color: red; text-align: center; margin-top: 10px;" class="text-center">Customer Lists</h3>
+            <h4 style="color: red;">Search</h4>
+            <input type="text" placeholder="Search.." name="search" style="width: 50%; text-align: center; font-size: 18px;;">
+            
+            
+           <div class="table-container" style="overflow-x: auto;">
+            <table id="table">
+                <tr>
+                  <th>CustomerId</th>
+                  <th>Email</th>
+                  <th>UserName</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>manishregmi39@gmail.com</td>
+                  <td>ManishRegmi</td>
+                  <td style="background-color: red;"><i class="fas fa-edit" style="color: white;"></i><i class="fas fa-trash" style="color: white; margin-left: 10px;"></i></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>hemanta@gmail.com</td>
+                    <td>Hemanta Jung Karki</td>
+                    <td style="background-color: red;"><i class="fas fa-edit" style="color: white;"></i><i class="fas fa-trash" style="color: white; margin-left: 10px;"></i></td>
+                  </tr>
+            </table>
+              
+           </div>
+           </div>
+              
         </div><!-- Content-section -->
     </div><!-- Main-content -->
 </body>

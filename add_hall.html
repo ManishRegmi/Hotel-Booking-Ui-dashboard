@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<script src="./js/sidebar.js"></script>    
+<script src="./js/sidebar.js"></script>
+<script src="./js/image.js"></script>
 <title>Document</title>
 </head>
 <body>
@@ -30,6 +31,7 @@
         <li><i class="fas fa-utensils" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Menu</a></li>
         <li><i class="fas fa-couch" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Table</a></li>
         <li><i class="fas fa-warehouse" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Hall</a></li>
+        <li><i class="fas fa-users" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Customers</a></li>
         <li><i class="fas fa-book" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Booking</a></li>
         <li><i class="fas fa-comment" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Reviews</a></li>
         <li><i class="fas fa-user" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Account</a></li>
@@ -70,14 +72,29 @@
                   <label for="fname">Total People</label>
                   <input type="number" id="fname" name="firstname" placeholder="Enter number of spaces...">
 
-                  <label for="lname">Hall Image1 (Required)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Front Image..">
+                  <div>
+                    <label for="lname" style="margin-top: 25px;">Hall Image 1(Required)</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="readHoteHallURL(this);"
+                    placeholder="Back Image..">
+                    <img id="hotelHallImage1" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                  </div>
 
-                  <label for="lname">Hall Image2 (Optional)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Back Image..">
+                  <div>
+                    <label for="lname" style="margin-top: 25px;">Hall Image 2 (Optional)</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="readHotelHallImage2URL(this);"
+                    placeholder="Back Image..">
+                    <img id="hotelHallImage2" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                  </div>
 
-                  <label for="lname">Hall Image3 (Optional)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Side Image..">
+                  <div>
+                    <label for="lname" style="margin-top: 25px;">Hall Image 3 (Optional)</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="readHotelHallImage3URL(this);"
+                    placeholder="Back Image..">
+                    <img id="hotelHallImage3" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                  </div>
 
                   <label for="subject">Hall Description</label>
                   <textarea id="subject" name="subject" placeholder="About Hall...." style="height:200px"></textarea>

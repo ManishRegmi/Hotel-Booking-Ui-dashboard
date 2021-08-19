@@ -31,6 +31,7 @@
         <li><i class="fas fa-utensils" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Menu</a></li>
         <li><i class="fas fa-couch" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Table</a></li>
         <li><i class="fas fa-warehouse" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Hall</a></li>
+        <li><i class="fas fa-users" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Customers</a></li>
         <li><i class="fas fa-book" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Booking</a></li>
         <li><i class="fas fa-comment" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Reviews</a></li>
         <li><i class="fas fa-user" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Account</a></li>
@@ -91,8 +92,13 @@
                   <label for="lname">Parking Area</label>
                   <input type="number" id="lname" name="lastname" placeholder="Parking Area..">
 
-                  <label for="lname">Parking Area Image</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Parking Image..">
+                  <div>
+                    <label for="lname">Parking Area Image</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="readHotelParkingURL(this);"
+                    placeholder="Side Image..">
+                    <img id="hotelparkingImage" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                </div>
 
                   <label for="lname">Hotel Type</label>
                   <select>
