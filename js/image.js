@@ -276,26 +276,159 @@ reader.readAsDataURL(input.files[0]);
 }
 }
 function hotelMenuImage19(input){
-    if(input.files && input.files[0]){
-    var reader = new FileReader();
-    reader.onload = function(e){
-    document.getElementById('hotelMenuImage-19').setAttribute('src', e.target.result);
-    document.getElementById('hotelMenuImage-19').style.display = 'block';
-    };
-    reader.readAsDataURL(input.files[0]);
-    }
-    }
-    
-    function hotelMenuImage20(input){
-    if(input.files && input.files[0]){
-    var reader = new FileReader();
-    reader.onload = function(e){
-    document.getElementById('hotelMenuImage-20').setAttribute('src', e.target.result);
-    document.getElementById('hotelMenuImage-20').style.display = 'block';
-    };
-    reader.readAsDataURL(input.files[0]);
-    }
-    }
-    
-    
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('hotelMenuImage-19').setAttribute('src', e.target.result);
+document.getElementById('hotelMenuImage-19').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+
+function hotelMenuImage20(input){
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('hotelMenuImage-20').setAttribute('src', e.target.result);
+document.getElementById('hotelMenuImage-20').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+
 // Add Menu ends
+
+// Add restaurants
+
+function hotelRestaurantImage1(input){
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('hotelRestaurantImage-1').setAttribute('src', e.target.result);
+document.getElementById('hotelRestaurantImage-1').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+function hotelRestaurantImage2(input){
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('hotelRestaurantImage-2').setAttribute('src', e.target.result);
+document.getElementById('hotelRestaurantImage-2').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+
+function hotelRestaurantImage3(input){
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('hotelRestaurantImage-3').setAttribute('src', e.target.result);
+document.getElementById('hotelRestaurantImage-3').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+    
+// Add restaurants ends
+
+// Add Room
+function hotelRoomImage1(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelRoomImage-1').setAttribute('src', e.target.result);
+    document.getElementById('hotelRoomImage-1').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+    function hotelRoomImage2(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelRoomImage-2').setAttribute('src', e.target.result);
+    document.getElementById('hotelRoomImage-2').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+    
+    function hotelRoomImage3(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelRoomImage-3').setAttribute('src', e.target.result);
+    document.getElementById('hotelRoomImage-3').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+// Add Room ends
+function hotelRoomImage1(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelRoomImage-1').setAttribute('src', e.target.result);
+    document.getElementById('hotelRoomImage-1').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+    function hotelRoomImage2(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelRoomImage-2').setAttribute('src', e.target.result);
+    document.getElementById('hotelRoomImage-2').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+    
+    function hotelRoomImage3(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelRoomImage-3').setAttribute('src', e.target.result);
+    document.getElementById('hotelRoomImage-3').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+// Add Table
+function hotelTableImage1(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelTableImage-1').setAttribute('src', e.target.result);
+    document.getElementById('hotelTableImage-1').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+    function hotelTableImage2(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelTableImage-2').setAttribute('src', e.target.result);
+    document.getElementById('hotelTableImage-2').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+    
+    function hotelTableImage3(input){
+    if(input.files && input.files[0]){
+    var reader = new FileReader();
+    reader.onload = function(e){
+    document.getElementById('hotelTableImage-3').setAttribute('src', e.target.result);
+    document.getElementById('hotelTableImage-3').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+    }
+    }
+// Add Table Ends

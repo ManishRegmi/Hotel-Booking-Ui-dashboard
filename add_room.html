@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<script src="./js/sidebar.js"></script>    
+<script src="./js/sidebar.js"></script>
+<script src="./js/image.js"></script> 
 <title>Document</title>
 </head>
 <body>
@@ -66,15 +67,30 @@
                   <label for="fname">Room Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Room Name...">
               
-                  <label for="lname">Room  Image1 (Required)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Front Image..">
+                  <div>
+                    <label for="lname">Room Image 1</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="hotelRoomImage1(this);"
+                    placeholder="Side Image..">
+                    <img id="hotelRoomImage-1" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                </div>
 
-                  <label for="lname">Room Image2 (Optional)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Back Image..">
+                <div>
+                    <label for="lname">Room Image 2</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="hotelRoomImage2(this);"
+                    placeholder="Side Image..">
+                    <img id="hotelRoomImage-2" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                </div>
 
-                  <label for="lname">Room Image3 (Optional)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Side Image..">
-              
+                   <div>
+                    <label for="lname">Room Image 3</label>
+                    <input type="file" id="lname" name="lastname"
+                    onchange="hotelRoomImage3(this);"
+                    placeholder="Side Image..">
+                    <img id="hotelRoomImage-3" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                </div>
+
                   <label for="lname">Room Price</label>
                   <input type="text" id="lname" name="lastname" placeholder="Room Price..">
                   

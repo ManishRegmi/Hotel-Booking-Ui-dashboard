@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <script src="./js/sidebar.js"></script>    
+<script src="./js/image.js"></script>  
 <title>Document</title>
 </head>
 <body>
@@ -63,15 +64,30 @@
                     <option value="">Intourist</option>
                     </select>
               
-                  <label for="lname">Restaurant  Image1 (Required)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Front Image..">
+                    <div>
+                        <label for="lname" style="margin-top: 25px;">Restaurant Image1 (Required)</label>
+                        <input type="file" id="lname" name="lastname"
+                        onchange="hotelRestaurantImage1(this);"
+                        placeholder="Back Image..">
+                        <img id="hotelRestaurantImage-1" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                      </div>
 
-                  <label for="lname">Restaurant Image2 (Optional)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Back Image..">
+                      <div>
+                        <label for="lname" style="margin-top: 25px;">Restaurant Image2 (Optional)</label>
+                        <input type="file" id="lname" name="lastname"
+                        onchange="hotelRestaurantImage2(this);"
+                        placeholder="Back Image..">
+                        <img id="hotelRestaurantImage-2" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                      </div>
 
-                  <label for="lname">Restaurant Image3 (Optional)</label>
-                  <input type="file" id="lname" name="lastname" placeholder="Side Image..">
-              
+                      <div>
+                        <label for="lname" style="margin-top: 25px;">Restaurant Image3 (Optional)</label>
+                        <input type="file" id="lname" name="lastname"
+                        onchange="hotelRestaurantImage3(this);"
+                        placeholder="Back Image..">
+                        <img id="hotelRestaurantImage-3" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+                      </div>
+
                   <label for="lname">No. Of Tables</label>
                   <input type="text" id="lname" name="lastname" placeholder="Number of table in a Restaurant..">
 
