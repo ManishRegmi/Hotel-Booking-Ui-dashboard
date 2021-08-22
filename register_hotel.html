@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Hotel || Hari</title>
+    <link rel="stylesheet" href="style/auth.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <script src="./js/image.js"></script>
+    <script src="./js/slider.js"></script>
+  </head>
+<body>
+  <div class="logo-image">
+    <img src="./images/hotel.jpg">
+    <h3 style="font-weight: bold; color: red; margin-left: 10px;">Hari</h3>
+  </div>
+ 
+<div class="register-card">
+<h1 style="text-align: center; margin:10px; color: red;">Register Your Hospitality Industry</h1><hr>
+<form class="form" action="">
+  <label for="fname">Email</label>
+  <input type="email" id="fname" name="firstname" placeholder="Enter Email for registration...">
+
+  <label for="fname">Password</label>
+  <input type="password" id="fname" name="firstname" placeholder="Enter Password...">
+
+  <label for="fname">Confirm Password</label>
+  <input type="password" id="fname" name="firstname" placeholder="Enter password again..."><hr>
+
+  <div style="margin-top: 10px;">
+  <label for="fname">Industry Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Industry Name...">
+</div>
+
+  <label for="lname">Industry Address</label>
+  <input type="text" id="lname" name="lastname" placeholder="Industry Address..">
+
+  <div class="ImagePreview">
+      <div>
+  <label for="lname" >Industry Front Image (Required)</label>
+  <input type="file"  name="lastname" 
+  onchange="readFrontURL(this);"
+  placeholder="Front Image..">
+</div>
+  <img id="frontImage" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+</div>
+
+<div>
+  <label for="lname" style="margin-top: 25px;">Industry Back Image (Optional)</label>
+  <input type="file" id="lname" name="lastname"
+  onchange="readBackURL(this);"
+  placeholder="Back Image..">
+  <img id="backImage" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+</div>
+
+<div>
+    <label for="lname">Industry Side Image (Optional)</label>
+    <input type="file" id="lname" name="lastname"
+    onchange="readSideURL(this);"
+    placeholder="Side Image..">
+    <img id="sideImage" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+</div>
+
+<div>
+  <label for="lname">Owner Citizenship/License/Passport Image (Required)</label>
+  <input type="file" id="lname" name="lastname"
+  onchange="readCitizenshipImageURL(this);"
+  placeholder="Side Image..">
+  <img id="CitizenshipImageURL" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+</div>
+
+<div>
+  <label for="lname">Industry Registered Document Image (Required)</label>
+  <input type="file" id="lname" name="lastname"
+  onchange="readRegisteredDocumentImageURL(this);"
+  placeholder="Side Image..">
+  <img id="RegisteredDocumentImageURL" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+</div>
+
+<label for="lname">Industry Phone Number</label>
+<input type="number" id="lname" name="lastname" placeholder="Phone Number..">
+
+<label for="lname">Industry Owner Phone Number</label>
+<input type="number" id="lname" name="lastname" placeholder="Owner Phone Number..">
+
+<div class="switch-align">
+  <label for="lname">Do You Have Parking?</label>
+<label class="switch">
+  <input type="checkbox" id="parking-checkbox" onchange="parkingSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+  <div style="display: none;" id="parkingImage-div">
+    <label for="lname">Parking Area Image</label>
+    <input type="file" id="lname" name="lastname"
+    onchange="readHotelParkingURL(this);"
+    placeholder="Side Image..">
+    <img id="hotelparkingImage" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Rooms?</label>
+<label class="switch">
+  <input type="checkbox" id="room-checkbox">
+  <span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Bar?</label>
+<label class="switch">
+  <input type="checkbox" id="bar-checkbox">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Hall?</label>
+<label class="switch">
+  <input type="checkbox" id="hall-checkbox" onchange="hallSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+<div style="display: none; margin-top: 20px;" id="check-hall">
+  <label for="lname">Total Number Of Hall</label>
+  <input type="number" id="lname" name="lastname" placeholder="Total Hall..">
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Website?</label>
+<label class="switch">
+  <input type="checkbox" id="website-checkbox" onchange="websiteSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div style="display: none;" id="hotelorcafe-website">
+  <label for="lname">Website</label>
+  <input type="text" id="lname" name="lastname" placeholder="Industry Website..">
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do You Industry Have Gmail?</label>
+<label class="switch">
+  <input type="checkbox" id="gmail-checkbox" onchange="gmailSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div style="display: none;" id="hotelorcafe-gmail">
+  <label for="lname">Gmail</label>
+  <input type="email" id="lname" name="lastname" placeholder="Industry gmail..">
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Facebook Account?</label>
+<label class="switch">
+  <input type="checkbox" id="facebook-checkbox" onchange="facebookSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div style="display: none;" id="hotelorcafe-facebook">
+  <label for="lname">Facebook Url</label>
+  <input type="text" id="lname" name="lastname" placeholder="Industry facebook..">
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Youtube Channel?</label>
+<label class="switch">
+  <input type="checkbox" id="youtube-checkbox" onchange="youtubeSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div style="display: none;" id="hotelorcafe-youtube">
+  <label for="lname">Channel Url</label>
+  <input type="text" id="lname" name="lastname" placeholder="Industry Youtube Channel..">
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Tiktok Account?</label>
+<label class="switch">
+  <input type="checkbox" id="tiktok-checkbox" onchange="tiktokSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div style="display: none;" id="hotelorcafe-tiktok">
+  <label for="lname">Tiktok Url</label>
+  <input type="text" id="lname" name="lastname" placeholder="Industry tiktok..">
+</div>
+
+<div class="switch-align">
+  <label for="lname">Do Your Industry Have Instagram Page?</label>
+<label class="switch">
+  <input type="checkbox" id="insta-checkbox" onchange="instaSlider()">
+  <span class="slider round"></span>
+</label>
+</div>
+
+<div style="display: none;" id="hotelorcafe-insta">
+  <label for="lname">Instagram Url</label>
+  <input type="text" id="lname" name="lastname" placeholder="Industry Instagram..">
+</div>
+
+  <label for="subject">Description</label>
+  <textarea id="subject" name="subject" placeholder="About Industry...." style="height:200px; width: 100%;"></textarea>
+  
+  <div class="switch-align">
+ <p class="TNC">Do you agree to our <span><a href="#">Privacy Policy</a></span> and <span><a href="#">Terms and Condition.</a></span></p>
+  <label class="switch">
+    <input type="checkbox" id="tnc-checkbox" onchange="tncSlider()">
+    <span class="slider round"></span>
+  </label>
+  </div>
+  
+<div style="display: none;"  id="button">
+ <button type="submit" class="btn">Add</button>
+</div>
+</form>
+</div>
+</body>
+</html>
