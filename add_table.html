@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <script src="./js/sidebar.js"></script>
 <script src="./js/image.js"></script>     
-<title>Document</title>
+<title>Add Table || Hari</title>
 </head>
 <body>
     <div class="sidebar" id="sidebar">
@@ -43,7 +43,7 @@
         <div class="topnav">
            <div class="topnav-header">
                <div class="dashboard-name">
-                   <i class="fas fa-bars desktop icon-color" style="color:red" onclick="openNav()"></i>
+                   <i class="fas fa-bars desktop icon-color" style="color:red; cursor: pointer;" onclick="openNav()"></i>
                    <i class="fas fa-bars mobile" style="color:red" onclick="openNavMobile()"></i>
                    <h3 style="margin-left: 10px;">Dashboard</h3>
                </div>
@@ -58,22 +58,14 @@
             <div class="add-room-form">
 
                 <form action="">
-
-                    <label for="lname">Select Hotel</label>
-                    <select>
-                    <option value="">Intourist</option>
-                    </select>
-
-                  <label for="fname">Choose Table Number</label>
-                  <select>
-                    <option value="">1</option>
-                    </select>
-
+                    <label for="fname">Table Number</label>
+                    <input type="number" id="fname" name="firstname" placeholder="Enter table number...">
+  
                   <label for="fname">Total People</label>
-                  <input type="number" id="fname" name="firstname" placeholder="Enter number of spaces...">
+                  <input type="number" id="fname" name="firstname" placeholder="Number of people who can be in this table...">
 
                   <div>
-                    <label for="lname">Table Image 1</label>
+                    <label for="lname">Table Image 1(Required)</label>
                     <input type="file" id="lname" name="lastname"
                     onchange="hotelTableImage1(this);"
                     placeholder="Side Image..">
@@ -81,7 +73,7 @@
                 </div>
 
                   <div>
-                    <label for="lname">Table Image 2</label>
+                    <label for="lname">Table Image 2 (Optional)</label>
                     <input type="file" id="lname" name="lastname"
                     onchange="hotelTableImage2(this);"
                     placeholder="Side Image..">
@@ -89,7 +81,7 @@
                 </div>
 
                    <div>
-                    <label for="lname">Table Image 3</label>
+                    <label for="lname">Table Image 3 (Optional)</label>
                     <input type="file" id="lname" name="lastname"
                     onchange="hotelTableImage3(this);"
                     placeholder="Side Image..">
