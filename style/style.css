@@ -248,6 +248,10 @@ border: 2px red solid;
 
 select{
 color: red;
+font-weight: bold;
+}
+select>option{
+font-weight: bold;
 }
 /* Add hotels ends */
 

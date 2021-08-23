@@ -54,16 +54,12 @@
            </div>
         </div><!-- topnav -->
         <div class="content-section">
-            <h3 style="color: red; text-align: center;" class="text-center">Add Rooms</h3>
+            <h3 style="color: red; text-align: center;" class="text-center">Add Room</h3>
             <div class="add-room-form">
 
                 <form action="">
 
-                    <label for="lname">Select Hotel</label>
-                    <select>
-                    <option value="">Intourist</option>
-                    </select>
-
+                  
                   <label for="fname">Room Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Room Name...">
               
@@ -96,11 +92,20 @@
                   
                   <label for="lname">No. Of Person</label>
                   <input type="text" id="lname" name="lastname" placeholder="Number of person in a room..">
+                  
+                  <label for="lname">Bed</label>
+                  <select>
+                  <option value="" disabled selected>Choose One:</option>
+                  <option value="single-bed">Single Bed</option>
+                  <option value="double-bed">Double Bed</option>
+                  <option value="triple-bed">Triple Bed</option>
+                  <option value="four-bed">Four Bed</option>
+                  </select>
 
                   <label for="subject">Room Description</label>
                   <textarea id="subject" name="subject" placeholder="About Room...." style="height:200px"></textarea>
                   
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Add Room">
                 </form>
               </div>
               

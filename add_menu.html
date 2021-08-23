@@ -10,8 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <script src="./js/sidebar.js"></script> 
-<script src="./js/image.js"></script>      
-<title>Document</title>
+<script src="./js/image.js"></script>
+<script src="./js/select.js"></script>   
+<title>Add Menu || Hari</title>
 </head>
 <body>
     <div class="sidebar" id="sidebar">
@@ -57,169 +58,55 @@
             <h3 style="color: red; text-align: center;" class="text-center">Add Menu</h3>
             <div class="add-hotel-form">
                 <form action="">
-                   
-              
+                  <label for="cars">Choose Category:</label>
+                  <select name="category" id="menuCategory" onchange="categorySelect()">
+                    <option value="" disabled selected>Choose One:</option>
+                    <option value="food">Food</option>
+                    <option value="drinks">Drinks</option>
+                  </select>
+
+                  <div style="display: none;" id="food-sub-category">
+                  <label for="cars">Choose Sub-Category:</label>
+                  <select name="sub-category" id="sub-category">
+                    <option disabled selected>Choose One:</option>
+                    <option value="veg">Veg</option>
+                    <option value="non-veg">Non-veg</option>
+                  </select>
+                </div>
+
+                <div style="display: none;" id="drinks-sub-category">
+                  <label for="cars">Choose Sub-Category:</label>
+                  <select name="sub-category" id="sub-category">
+                    <option disabled selected>Choose One:</option>
+                    <option value="water">Water</option>
+                    <option value="milk">Milk</option>
+                    <option value="soft-drinks">Soft Drinks</option>
+                    <option value="sleep-drinks">Sleep Drinks</option>
+                    <option value="drinks">Hot Drinks</option>
+                    <option value="food">Juice</option>
+                    <option value="drinks">Alcoholic Drinks(Beer, Cider, Wine)</option>
+                    <option value="food">Spirits(All Drinks with 20%+ Alcohol Level)</option>
+                  </select>
+                </div>
+
+                  <label for="lname">Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Item Name..">
+
+                  <label for="lname">Price</label>
+                  <input type="number" id="lname" name="lastname" placeholder="Item Price..">
+                
                   <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 1</label>
+                    <label for="lname" style="margin-top: 25px;">Item Image(Optional)</label>
                     <input type="file" id="lname" name="lastname"
                     onchange="hotelMenuImage1(this);"
                     placeholder="Back Image..">
                     <img id="hotelMenuImage-1" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
                   </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 2</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage2(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-2" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 3</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage3(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-3" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
 
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 4</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage4(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-4" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 5</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage5(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-5" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 6</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage6(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-6" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 7</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage7(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-7" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 8</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage8(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-8" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 9</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage9(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-9" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 10</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage10(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-10" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 11</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage11(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-11" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 12</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage12(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-12" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 13</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage13(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-13" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 14</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage14(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-14" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 15</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage15(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-15" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 16</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage16(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-16" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 17</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage17(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-17" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 18</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage18(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-18" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-                  
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 19</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage19(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-19" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
+                  <label for="lname" style="margin-top: 25px;">Item Image(Optional)</label>
+                  <textarea placeholder="About Item"></textarea>
 
-                  <div>
-                    <label for="lname" style="margin-top: 25px;">Menu Image 20</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelMenuImage20(this);"
-                    placeholder="Back Image..">
-                    <img id="hotelMenuImage-20" style="display: none;margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                  </div>
-
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Add Item">
                 </form>
               </div>
               

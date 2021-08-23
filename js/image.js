@@ -43,6 +43,28 @@ document.getElementById('hotelparkingImage').style.display = 'block';
 reader.readAsDataURL(input.files[0]);
 }
 }
+
+function readCitizenshipImageURL(input){
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('CitizenshipImageURL').setAttribute('src', e.target.result);
+document.getElementById('CitizenshipImageURL').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+
+function readRegisteredDocumentImageURL(input){
+if(input.files && input.files[0]){
+var reader = new FileReader();
+reader.onload = function(e){
+document.getElementById('RegisteredDocumentImageURL').setAttribute('src', e.target.result);
+document.getElementById('RegisteredDocumentImageURL').style.display = 'block';
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
 // Add Hotels ends
 
 
@@ -89,209 +111,6 @@ var reader = new FileReader();
 reader.onload = function(e){
 document.getElementById('hotelMenuImage-1').setAttribute('src', e.target.result);
 document.getElementById('hotelMenuImage-1').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage2(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-2').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-2').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage3(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-3').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-3').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-function hotelMenuImage4(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-4').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-4').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage5(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-5').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-5').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage6(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-6').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-6').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-function hotelMenuImage7(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-7').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-7').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage8(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-8').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-8').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage9(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-9').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-9').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-function hotelMenuImage10(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-10').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-10').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage11(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-11').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-11').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage12(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-12').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-12').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-function hotelMenuImage13(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-13').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-13').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage14(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-14').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-14').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage15(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-15').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-15').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-function hotelMenuImage16(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-16').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-16').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage17(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-17').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-17').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage18(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-18').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-18').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-function hotelMenuImage19(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-19').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-19').style.display = 'block';
-};
-reader.readAsDataURL(input.files[0]);
-}
-}
-
-function hotelMenuImage20(input){
-if(input.files && input.files[0]){
-var reader = new FileReader();
-reader.onload = function(e){
-document.getElementById('hotelMenuImage-20').setAttribute('src', e.target.result);
-document.getElementById('hotelMenuImage-20').style.display = 'block';
 };
 reader.readAsDataURL(input.files[0]);
 }
