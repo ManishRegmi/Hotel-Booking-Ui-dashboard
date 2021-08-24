@@ -225,6 +225,71 @@ justify-content: space-evenly;
 padding: 20px;
 }
 
+/* test */
+
+.register-template{
+display: flex;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1%;
+margin-bottom: 5%;
+width: 80%;
+height: auto;
+border-radius: 10px;
+box-shadow: 5px 10px 18px #888888;
+background-color: white;
+}
+
+.register-links{
+width: 30%;
+padding-left: 10%;
+padding-top: 3%;
+}
+.register-content{
+background-color: white;
+/* height: 500px; */
+width:70%;
+}
+.register-links li{
+  margin-bottom: 35px;
+display: block;
+list-style: none;
+font-size: 20px;
+
+}
+
+.register-links li a{
+  color: black;
+text-decoration: none;
+  /* display: block; */
+  transition-duration: 700ms;
+  /* margin-left: 20px; */
+  transition-duration: 700ms;
+  }
+
+  .register-links li a:hover:not(.active){
+    color: black;
+    margin-left: 5px;
+    transition-duration: 700ms;
+    }
+
+.active{
+  border: 2px red solid;
+  border-radius: 10px;
+  transition-duration: 700ms;
+  padding: 5px;
+}
+
+  .register-links li i{
+  color: red;
+  }
+
+  .register-section{
+  padding: 10px;
+  }
+/* test ends */
+
 @media only screen and (max-width:1024px) {
 .login-card{
 width: 90%;
@@ -237,8 +302,20 @@ justify-content: start;
 position: inherit;
 padding: 20px;
 }
-.register-card{
-width: 90%;
-}
+
 }
 
+@media only screen and (max-width:768px) {
+  
+    .register-template{
+      display: block;
+      width: 100%;
+    }
+  .register-links{
+    width: 100%;
+    }
+    .register-content{
+    width: 100%;
+    }
+
+}

@@ -7,16 +7,6 @@ document.getElementById('parkingImage-div').style.display = 'none';
 }
 }
 
-function hallSlider(){
-any = document.getElementById('hall-checkbox').checked;
-if(any == true){
-document.getElementById('check-hall').style.display = 'block';
-}else{
-document.getElementById('check-hall').style.display = 'none';
-}
-}
-
-
 function websiteSlider(){
 any = document.getElementById('website-checkbox').checked;
 if(any == true){
@@ -74,7 +64,7 @@ document.getElementById('hotelorcafe-tiktok').style.display = 'none';
 function tncSlider(){
 any = document.getElementById('tnc-checkbox').checked;
 if(any == true){
-document.getElementById('button').style.display = 'block';
+document.getElementById('button').style.display = 'flex';
 }else{
 document.getElementById('button').style.display = 'none';
 }

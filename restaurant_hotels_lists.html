@@ -9,9 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<script src="./js/sidebar.js"></script>
-<script src="./js/image.js"></script>     
-<title>Add Table || Hari</title>
+<script src="./js/sidebar.js"></script>    
+<title>Hotel Lists || Hari</title>
 </head>
 <body>
     <div class="sidebar" id="sidebar">
@@ -25,8 +24,8 @@
     <div class="sidebar-links">
     <ul>
         <li><i class="fas fa-home" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="active">Home</a></li>
-        <li><i class="fas fa-hotel" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu_index.html" class="">Hotel</a></li>
-        <li><i class="fas fa-bed"style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="room_hotel_list.html">Rooms</a></li>
+        <li><i class="fas fa-hotel" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="add_hotel.html" class="">Hotel</a></li>
+        <li><i class="fas fa-bed"style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Rooms</a></li>
         <li><i class="fas fa-glass-martini" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Resturants</a></li>
         <li><i class="fas fa-utensils" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Menu</a></li>
         <li><i class="fas fa-couch" style="color:white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="">Table</a></li>
@@ -43,7 +42,7 @@
         <div class="topnav">
            <div class="topnav-header">
                <div class="dashboard-name">
-                   <i class="fas fa-bars desktop icon-color" style="color:red; cursor: pointer;" onclick="openNav()"></i>
+                   <i class="fas fa-bars desktop icon-color" style="color:red" onclick="openNav()"></i>
                    <i class="fas fa-bars mobile" style="color:red" onclick="openNavMobile()"></i>
                    <h3 style="margin-left: 10px;">Dashboard</h3>
                </div>
@@ -54,46 +53,61 @@
            </div>
         </div><!-- topnav -->
         <div class="content-section">
-            <h3 style="color: red; text-align: center;" class="text-center">Add Table</h3>
-            <div class="add-room-form">
+            <h3 style="color: red; text-align: center; margin-top: 10px;" class="text-center">Select Hotels For Restaurant lists</h3>
+            <h4 style="color: red;">Search</h4>
+            <input type="text" placeholder="Search Hotels.." name="search" style="width: 50%; text-align: center; font-size: 18px;;">
+            
+            
+           <div class="room-hotels-container">
+          
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-hotel fa-2x"></i></div>
+                <hr>
+                <div class="card-body">
+                    <h4><b>Intourist Palace</b></h4> 
+                  </div>
+            </div>
 
-                <form action="">
-                    <label for="fname">Table Number</label>
-                    <input type="number" id="fname" name="firstname" placeholder="Enter table number...">
-  
-                  <label for="fname">Total People</label>
-                  <input type="number" id="fname" name="firstname" placeholder="Number of people who can be in this table...">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-hotel fa-2x"></i></div>
+                <hr>
+                <div class="card-body">
+                    <h4><b>Intourist Palace</b></h4> 
+                  </div>
+            </div>
 
-                  <div>
-                    <label for="lname">Table Image 1(Required)</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelTableImage1(this);"
-                    placeholder="Side Image..">
-                    <img id="hotelTableImage-1" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-hotel fa-2x"></i></div>
+                <hr>
+                <div class="card-body">
+                    <h4><b>Intourist Palace</b></h4> 
+                  </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-hotel fa-2x"></i></div>
+                <hr>
+                <div class="card-body">
+                    <h4><b>Intourist Palace</b></h4> 
+                  </div>
+            </div>
 
-                  <div>
-                    <label for="lname">Table Image 2 (Optional)</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelTableImage2(this);"
-                    placeholder="Side Image..">
-                    <img id="hotelTableImage-2" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-hotel fa-2x"></i></div>
+                <hr>
+                <div class="card-body">
+                    <h4><b>Intourist Palace</b></h4> 
+                  </div>
+            </div>
 
-                   <div>
-                    <label for="lname">Table Image 3 (Optional)</label>
-                    <input type="file" id="lname" name="lastname"
-                    onchange="hotelTableImage3(this);"
-                    placeholder="Side Image..">
-                    <img id="hotelTableImage-3" style="display: none; margin-bottom: 20px;" width="200" height="200" src="#" alt="your image" />
-                </div>
-
-                  <label for="subject">Table Description</label>
-                  <textarea id="subject" name="subject" placeholder="About Table...." style="height:200px"></textarea>
-                  
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-hotel fa-2x"></i></div>
+                <hr>
+                <div class="card-body">
+                    <h4><b>Intourist Palace</b></h4> 
+                  </div>
+            </div>
+           </div>
+           </div>
               
         </div><!-- Content-section -->
     </div><!-- Main-content -->
