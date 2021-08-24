@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<script src="./js/sidebar.js"></script>    
+<script src="./js/sidebar.js"></script>   
+<script src="./js/modal.js"></script> 
 <title>Document</title>
 </head>
 <body>
@@ -37,7 +38,24 @@
     </ul>
     </div>
     </div><!-- Sidebar -->
-
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()" style="color: red;">&times;</span>
+       <h3 style="text-align: center; color: red;">Confirmation</h3><hr>
+       <h4 style="text-align: center; color: red; margin-top: 10px;"> Are You Sure Want To Delete??</h4>
+       <div class="modal-button">
+        <button class="btn modal-btn">Yes</button><button class="btn modal-btn" style="background-color:green" onclick="closeModal()">No</button>
+       </div>
+      </div>
+    
+    </div>
+    
+  
+  
     <div class="main-content" id="main">
         <div class="topnav">
            <div class="topnav-header">
@@ -66,7 +84,7 @@
                         <h5>Rs.500</h5>
                     </div>
                     <div class="menu-tile-action">
-                    <i class="fas fa-edit"></i><br><i class="fas fa-trash" style="margin-left: 10px;"></i>
+                        <i class="fas fa-edit"></i><i class="fas fa-trash" id="myBtn" onclick="openModal()" style="margin-left: 10px;"></i>
                     </div>
                 </div>
             </div>
@@ -79,7 +97,7 @@
                         <h5>Rs.500</h5>
                     </div>
                     <div class="menu-tile-action">
-                    <i class="fas fa-edit"></i><i class="fas fa-trash" style="margin-left: 10px;"></i>
+                        <i class="fas fa-edit"></i><i class="fas fa-trash" id="myBtn" onclick="openModal()" style="margin-left: 10px;"></i>
                     </div>
                 </div>
             </div>
@@ -92,7 +110,7 @@
                         <h5>Rs.500</h5>
                     </div>
                     <div class="menu-tile-action">
-                    <i class="fas fa-edit"></i><i class="fas fa-trash" style="margin-left: 10px;"></i>
+                    <i class="fas fa-edit"></i><i class="fas fa-trash" id="myBtn" onclick="openModal()" style="margin-left: 10px;"></i>
                     </div>
                 </div>
             </div>
